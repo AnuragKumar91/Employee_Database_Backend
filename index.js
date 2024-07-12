@@ -30,5 +30,5 @@ mongoose.connect(dbURI).then(()=>{
 app.use("/api", route);
 
 app.get("/",(req,res)=>{
-    res.send("hii bro")
+    res.send("hii anurag")
 })

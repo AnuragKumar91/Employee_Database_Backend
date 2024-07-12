@@ -1,24 +1,25 @@
 import mongoose from "mongoose";
 
 
-const userSchema = new mongoose.Schema({
-    fname:{
+const EmployeeSchema = new mongoose.Schema({
+    name:{
         type: String,
         required: true
     },
-    lname:{
-        type: String,
+    number:{
+        type: Number,
         required: true
     },
     email:{
         type: String,
         required: true
     },
-    password:{
+   
+    role:{
         type: String,
         required: true
     }
 })
 
 
-export default mongoose.model("Crud", userSchema);
+export default mongoose.model("List of Employee", EmployeeSchema);
